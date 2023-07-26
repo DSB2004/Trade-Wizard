@@ -1,0 +1,22 @@
+link
+: 
+"https://finance.yahoo.com/m/6ba7fedd-7cfc-457b-96a9-1b72c3516ce1/tesla-offers-customers.html"
+providerPublishTime
+: 
+1690038004
+publisher
+: 
+"Engadget"
+thumbnail
+: 
+{resolutions: Array(2)}
+title
+: 
+"Tesla offers customers one-time Full Self-Driving transfer until September 30th"
+type
+: 
+"STORY"
+uuid
+: 
+"6ba7fedd-7cfc-457b-96a9-1b72c3516ce1"
+                 

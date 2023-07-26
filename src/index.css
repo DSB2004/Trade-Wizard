@@ -1,0 +1,22 @@
+* {
+  font-family: 'Victor Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: #fdfdfd;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.53);
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0.53);
+}

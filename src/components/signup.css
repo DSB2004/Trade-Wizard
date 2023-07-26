@@ -1,0 +1,256 @@
+.signup_sec {
+    position: relative;
+    top: 90px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.OTP_sec {
+    position: relative;
+    top: 160px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.OTP_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    /* height: 320px; */
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(60px);
+}
+
+.signup_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    padding: 10px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(60px);
+}
+
+#sign_in_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    max-height: 320px;
+    max-width: 500px;
+    min-height: 250px;
+
+}
+
+#heading {
+    font-size: 30px;
+    color: white;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+.seperate {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.OTP {
+    margin-top: 10px;
+}
+
+.OTP input {
+    border-radius: 8px;
+    width: 300px;
+    /* margin: 5px; */
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid white;
+
+    margin-right: 10px;
+}
+
+.OTP input::placeholder {
+    color: white;
+}
+
+#OTP_msg {
+    color: white;
+    font-size: 10px;
+}
+
+#sign_in_form input {
+    border-radius: 8px;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 2px solid white;
+}
+
+#sign_in_form input::placeholder {
+    color: white;
+}
+
+#sign_in_form h4 {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+#btn {
+    /* margin-top: 20px; */
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    transition: background-color 500ms ease-in-out;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    /* margin: 0px 10px; */
+    font-size: 15px;
+}
+
+#btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.option img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.option a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bol;
+    text-decoration: none;
+}
+
+.option a:hover {
+    font-weight: bolder;
+}
+
+#google1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.Google_div {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+.Google_div:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#login_page a {
+    font-size: 15px;
+}
+
+#msg {
+    color: white;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading_sign {
+    color: white;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    /* font-size: 20px; */
+    animation: rotate 1s linear infinite;
+}
+
+#sign_error {
+    /* border: 2px solid white; */
+    color: white;
+    height: 22px;
+    margin-top: 4px
+}
+
+@media only screen and (max-width: 450px) {
+    .signup_sec {
+        position: relative;
+        top: 130px;
+        margin: 10px;
+
+    }
+
+    #heading {
+        font-size: 25px;
+        color: white;
+        padding: 2px;
+        margin: 0px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .option a {
+        margin-left: 20px;
+        font-size: 20px;
+        color: white;
+        font-weight: bol;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .OTP_div #sign_in_form h4 {
+        text-align: center;
+    }
+
+
+}

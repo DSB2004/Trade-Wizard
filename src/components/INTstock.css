@@ -1,0 +1,212 @@
+.Stock_INT_head {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Pricing h3 {
+    color: white;
+    font-size: 28px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#loading_div {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.INT_btn {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 22px;
+    padding: 7px;
+    color: white;
+    margin: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+#INT_button_div {
+    /* border: 2px solid white; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#error_head {
+    color: white
+}
+
+.INT_btn:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.INT_about {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#Pricing {
+    border: 2px solid white;
+    border-radius: 20px;
+    /* margin: 10px; */
+    padding: 40px;
+    backdrop-filter: blur(60px);
+    margin: auto 20px;
+    margin-right: 100px;
+    /* height: */
+    width: 400px;
+}
+
+#changeGraph {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change_btn {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 500ms ease-in-out;
+}
+
+.change_btn:hover {
+    background-color: white;
+    color: black
+}
+
+#Pricing ul {
+    list-style-type: none;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+#Pricing ul h3 {
+    color: white;
+}
+
+#info-1 {
+    color: greenyellow;
+}
+
+#info-2 {
+    color: rgb(255, 99, 99)
+}
+
+.info_INT {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Graph {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.INT_stock_news {
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.innerNews {
+    height: 85%;
+    overflow-y: auto;
+}
+
+.INT_stock_news h2 {
+    color: white;
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    text-align: center;
+    position: sticky;
+
+}
+
+.news_INT {
+    height: fit-content;
+    border: 2PX solid white;
+    border-radius: 30px;
+    backdrop-filter: blur(60px);
+    margin: 10px;
+    padding: 20px;
+}
+
+.news_INT h3 {
+    color: white;
+}
+
+.news_INT ul {
+    list-style: none;
+}
+
+.news_INT ul li {
+    color: white;
+    margin: 5px;
+}
+
+.news_INT ul a {
+
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* 
+     */
+    .INT_about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #Pricing {
+        width: auto;
+        margin: auto;
+    }
+
+    #Graph {
+        display: none;
+    }
+
+    .news_INT ul {
+        padding: 0px;
+        text-align: left;
+    }
+
+    .news_INT ul a {
+        display: block;
+    }
+
+    .innerNews {
+        overflow-x: hidden;
+    }
+}

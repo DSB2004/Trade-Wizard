@@ -1,0 +1,136 @@
+#search_div {
+    width: 80%;
+    margin: 10px;
+    /* padding: 10px; */
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.search_output {
+    margin-top: 10px;
+    /* border: 2px solid white; */
+    height: 85%;
+}
+
+#loading_div {
+    color: white;
+}
+
+#searchbar {
+    width: 500px;
+    padding: 6px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+    backdrop-filter: blur(60px);
+}
+
+#searchbar::placeholder {
+    color: white;
+}
+
+#searchicon {
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#searchicon:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+#dropbar {
+    /* width: 00px; */
+    margin: 0px 20px;
+    padding: 6px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+    backdrop-filter: blur(60px);
+}
+
+
+
+#dropbar option {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#dropbar option[value=""] {
+    display: none;
+}
+
+#error_msg {
+    color: white;
+    margin-left: 200px;
+    /* white-space: nowrap; */
+    width: max-content;
+    height: 25px;
+}
+
+@media only screen and (max-width: 450px) {
+    #search_div {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: center; */
+        margin-right: 0px;
+        padding-right: 0px
+    }
+
+    #searchbar {
+        width: auto;
+        padding: 6px;
+        font-size: 15px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        backdrop-filter: blur(60px);
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+    #dropbar {
+        width: auto;
+        margin-left: 10px;
+        padding: 6px;
+        font-size: 15px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-top: 5px;
+        backdrop-filter: blur(60px);
+    }
+
+    #search {
+        margin: 0px
+    }
+
+    #searchicon {
+        margin-left: 190px;
+        margin-top: -36px;
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 6px;
+        border-radius: 5px;
+    }
+
+
+}

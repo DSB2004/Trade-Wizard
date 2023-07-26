@@ -1,0 +1,175 @@
+.NSE_stock_head {
+    color: white;
+}
+
+.NSE_about {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#Pricing_NSE {
+    border: 2px solid white;
+    border-radius: 20px;
+    /* margin: 10px; */
+    padding: 40px;
+    backdrop-filter: blur(60px);
+    margin: auto 20px;
+    margin-right: 100px;
+    width: 400px
+}
+
+#Pricing_NSE ul {
+    list-style-type: none;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+#Pricing_NSE h3 {
+    color: white;
+}
+
+#Pricing_NSE h4 {
+    color: white;
+}
+
+#Pricing_NSE ul h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.info {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info-1,
+#info-9 {
+    color: greenyellow;
+}
+
+#info-2,
+#info-10 {
+    color: rgb(255, 99, 99)
+}
+
+.info_INT {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quotesNSE {
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.quotesNSE h3 {
+    text-align: center;
+    color: white;
+    margin: 10px 0px;
+}
+
+.quotes_div {
+    margin: auto;
+    height: 80%;
+    overflow-y: scroll;
+    width: 95%;
+    border-radius: 30px;
+    padding: 10px;
+    /* border: 2px solid rgba(255, 255, 255, 0.397); */
+}
+
+.quotes_element {
+    margin: 10px;
+    border: 2px solid white;
+    backdrop-filter: blur(60px);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.quotes_element h4 {
+    color: white;
+    margin-left: 10px;
+}
+
+.quotes_element ul {
+    margin-left: 40px;
+}
+
+.quotes_element ul li {
+    list-style: none;
+    color: white;
+}
+
+.quotes_element ul li span {
+    color: white;
+}
+
+.News {
+    /* position:relative */
+    margin-top: 50px;
+    border: 2px solid white;
+    width: 100%;
+    border-radius: 30px;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.innernew {
+    height: 85%;
+    overflow-y: auto;
+}
+
+.News h3 {
+    color: white;
+    text-align: center;
+}
+
+.innernew ul a {
+    color: white;
+    /* white-space: nowrap; */
+}
+
+.NSE_stock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .NSE_stock {
+        flex-direction: column;
+    }
+
+    .quotesNSE {
+        /* overflow-x: hidden; */
+        margin-top: 50px;
+    }
+
+    .quotes_element ul {
+        margin-left: 0px;
+    }
+
+    .innernew {
+        overflow-x: hidden;
+    }
+
+    #Pricing_NSE {
+        border: 2px solid white;
+        border-radius: 20px;
+        /* margin: 10px; */
+        padding: 22px;
+        backdrop-filter: blur(60px);
+        /* margin: auto 20px;
+        margin-right: 0px; */
+        margin-right: 0px;
+        margin: auto;
+        width: auto
+    }
+
+}
