@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Header from './Header'
 import { Link } from 'react-router-dom'
 import './signup.css'
 import google_logo from '../Photos/Google Logo.png'

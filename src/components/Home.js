@@ -140,7 +140,6 @@ export default function Home() {
                 <div id="button_div">
                     <Link to="/SignIn"><button class="home_btn">Sign In</button></Link>
                     <Link to="/SignUp"><button class="home_btn">Sign Up</button></Link>
-                    <Link to="/Main"><button class="home_btn">Main</button></Link>
                 </div>
             </div >
             <div className="aboutus/ContactUs" id="about" style={about_us}>

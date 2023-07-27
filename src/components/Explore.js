@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Header from './Header'
 import { FaSpinner, FaArrowUp, FaArrowDown, FaSearch } from 'react-icons/fa'
 import "./Explore.css"
 import Footer from './Footer'
@@ -14,10 +13,7 @@ export default function Explore() {
         left: loading_position_x
     }
     var stock_option = []
-    const content_area = document.getElementById("stock_content")
     const [stock_content, set_stock] = useState(<div id="loading_div" style={loading_style}><FaSpinner className='loading' /></div>)
-
-
     var height_stocks = (height - 190).toString() + "px"
     const List = {
         overflowY: 'scroll',
