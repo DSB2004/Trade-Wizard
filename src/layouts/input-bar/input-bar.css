@@ -1,0 +1,67 @@
+.input-bar {
+  border-radius: 20px;
+}
+
+.input {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  margin: 0px;
+  width: 80%;
+  transition: all 500ms ease-in-out;
+  background-color: transparent;
+}
+
+.input-btn {
+  padding: 5px;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  font-weight: bolder;
+  transition: all 500ms ease-in-out;
+  background-color: transparent;
+  width: 10%;
+}
+
+.light-input-bar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.244);
+}
+
+.dark-input-bar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(169, 169, 169, 0.267);
+}
+
+.light-input::placeholder {
+  color: rgb(119, 119, 119);
+}
+
+.dark-input::placeholder {
+  color: rgb(174, 174, 174);
+}
+
+.passwordChanger {
+  width: 10%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+  .input {
+    padding: 3px 8px;
+    font-size: 18px;
+  }
+
+  .input-btn {
+    padding: 5px;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: all 500ms ease-in-out;
+    background-color: transparent;
+    width: 10%;
+  }
+}

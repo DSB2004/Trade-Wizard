@@ -1,0 +1,57 @@
+.button {
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  z-index: 1;
+  margin: 0px 20px;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  transition: 1s;
+}
+
+.button:hover::before {
+  filter: blur(2px);
+}
+
+@media screen and (max-width:1600px) {
+
+  .button {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .button {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .intro-btn-div {
+    flex-wrap: wrap;
+  }
+
+  .button {
+    margin: 10px 10px;
+    padding: 5px 10px;
+  }
+}

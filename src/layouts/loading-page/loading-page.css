@@ -1,0 +1,107 @@
+.loading-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+}
+
+/* 3D tower loader made by: csozi | Website: www.csozi.hu*/
+
+/* .outer-loader-div {
+  height: 30vw;
+  width: 30vw;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  display: flex;
+  justify-content: center;
+  background: var(--tri-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  animation: rotate-bg 2s linear infinite;
+  box-shadow: inset 0em 0em 0.5em rgba(0, 0, 0, 0.3),
+    0em 0em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.inner-loader-div {
+  box-shadow: 0em -0.125em 0.25em rgba(0, 0, 0, 0.5),
+    0em 0.125em 0.5em rgba(255, 255, 255, 1);
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+} */
+
+.loading-page-header {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  font-size: 50px;
+  /* transform: translate(-50%, -100%); */
+}
+
+/* @keyframes rotate-bg {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-size: 500% 500%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+} */
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #6793fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}

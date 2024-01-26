@@ -1,0 +1,70 @@
+.trending-stock {
+  position: relative;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.093);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0px;
+  padding: 10px;
+  overflow: hidden;
+  animation: flyin 800ms linear;
+}
+
+.stock-icon {
+  height: 50px;
+  width: 50px;
+}
+.stock-name {
+  transition: all 500ms ease-in-out;
+  min-width: 50%;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0px;
+}
+.stock-symbol {
+  transition: all 500ms ease-in-out;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+}
+.light-symbol {
+  color: rgb(82, 82, 82);
+}
+.dark-symbol {
+  color: rgb(40, 15, 15);
+}
+.stock-price {
+  transition: all 500ms ease-in-out;
+  font-size: 16px;
+  margin: 0px;
+}
+.stockpercentage {
+  margin: 2px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.up-light-percentage {
+  color: #125500; /* Light gray color */
+}
+.up-dark-percentage {
+  color: #37ff00; /* Light gray color */
+}
+
+.down-percentage {
+  color: rgb(255, 64, 0);
+}
+
+@media screen and (max-width: 1000px) {
+  .stock-name {
+    font-size: 20px;
+  }
+  .stock-symbol {
+    font-size: 14px;
+  }
+  .stock-price {
+    font-size: 14px;
+  }
+  .stockpercentage {
+    font-size: 12px;
+  }
+}

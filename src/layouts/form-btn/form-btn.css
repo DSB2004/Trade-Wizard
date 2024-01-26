@@ -1,0 +1,36 @@
+.form-button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bolder;
+  text-shadow: none;
+  cursor: pointer;
+  background-size: 300%;
+  background: transparent;
+}
+
+.dark-btn {
+  border: 1px solid #e6e6e6;
+  color: #e6e6e6;
+}
+
+.light-btn {
+  border: 1px solid #464646;
+  color: #464646;
+}
+
+.form-button:hover {
+  box-shadow: 0 0 10px #d0d0d0, 0 0 10px #868686, 0 0 10px #606060,
+    0 0 10px #ffffff;
+}
+
+@media screen and (max-width:800px) {
+  .form-button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+
+}

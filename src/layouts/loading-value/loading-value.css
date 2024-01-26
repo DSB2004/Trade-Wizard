@@ -1,0 +1,21 @@
+.loading-light-value {
+  color: rgb(111, 111, 111);
+}
+.loading-dark-value {
+  color: rgb(198, 198, 198);
+}
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading-value {
+  animation: pulsate 3s linear infinite;
+}

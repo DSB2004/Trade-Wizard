@@ -1,0 +1,17 @@
+.filter {
+  margin: 0px 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-weight: bolder;
+}
+
+.activeFilter {
+  background-color: var(--sub-heading-color);
+  color: white;
+}
+@media screen and (max-width:1100px) {
+  .filter {
+  font-size: 13px;
+}
+
+}

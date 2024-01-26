@@ -1,0 +1,117 @@
+.chat-btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  font-size: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.chat-toggle-icon {
+  font-size: 25px;
+}
+
+.chat-area {
+  width: 600px;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.open-chat-area {
+  right: 0px;
+}
+
+.close-chat-area {
+  right: -650px;
+}
+
+.chat-header {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.chat-message-div {
+  height: 65%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.chat-submit-div {
+  height: 25%;
+}
+
+.chat-input {
+  font-size: 15px;
+  width: 95%;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+
+.light-border {
+  border: 2px solid rgba(182, 182, 182, 0.751);
+}
+
+.dark-border {
+  border: 2px solid rgba(182, 182, 182, 0.23);
+}
+
+@media screen and (max-width:1600px) {
+  .chat-message-div {
+    height: 65%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .chat-submit-div {
+    height: 20%;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .chat-btn {
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+  }
+
+  .chat-toggle-icon {
+    font-size: 22px;
+  }
+
+  .chat-area {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .chat-btn {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+  }
+
+  .chat-toggle-icon {
+    font-size: 20px;
+  }
+
+  .chat-area {
+    width: 80%;
+    min-width: 250px
+  }
+
+  .chat-header {
+    font-size: 12px;
+  }
+
+  .chat-input {
+    font-size: 14px;
+    width: 95%;
+    padding: 2px;
+  }
+}

@@ -1,0 +1,22 @@
+.blog-card {
+  min-width: 95%;
+  margin: 10px;
+  animation: flyin 800ms linear;
+  border: 1px solid rgba(0, 0, 0, 0.111);
+}
+.blog-card-heading {
+  width: 90%;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+
+.blog-card-content {
+  font-size: 12px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+.blog-card-link {
+  overflow-wrap: break-word;
+  margin-top: auto;
+  font-size: 12px;
+}

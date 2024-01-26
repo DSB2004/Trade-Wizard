@@ -1,0 +1,84 @@
+.typewriter {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.typewriter-text {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--sub-heading-color);
+}
+
+.blinker {
+  height: 80%;
+  width: 5px;
+  animation: blink 500ms linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: white;
+  }
+
+  50% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .typewriter {
+    height: 40px;
+    margin: 20px 0px;
+  }
+
+  .typewriter-text {
+    font-size: 25px;
+  }
+
+  .blinker {
+    height: 60%;
+    width: 5px;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+  .typewriter {
+    height: 35px;
+    margin: 20px 0px;
+  }
+
+  .typewriter-text {
+    font-size: 22px;
+  }
+
+  .blinker {
+    height: 60%;
+    width: 5px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .typewriter {
+    height: 30px;
+    margin: 20px 0px;
+  }
+
+  .typewriter-text {
+    font-size: 18px;
+  }
+
+  .blinker {
+    height: 80%;
+    width: 5px;
+  }
+
+}

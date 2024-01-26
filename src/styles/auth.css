@@ -1,0 +1,109 @@
+/* general  */
+
+:root {
+  --auth-p-font-size: 30px;
+  --auth-form-width: 40%;
+  --auth-intro-width: 40%;
+  --auth-h-font-size: 70px;
+}
+
+.Auth {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* SignUp SignIn styling */
+.auth-content {
+  min-height: 70vh;
+  width: 90%;
+}
+
+.auth-header {
+  font-size: var(--auth-h-font-size);
+}
+
+.auth-p {
+  font-size: var(--auth-p-font-size);
+}
+
+.auth-intro {
+  width: var(--auth-intro-width);
+  padding: 0px 20px;
+}
+
+.auth-form {
+  width: var(--auth-form-width);
+  border: 2px solid rgba(109, 109, 109, 0.469);
+  padding: 40px 0px;
+  border-radius: 30px;
+}
+
+
+.form-result {
+  font-size: 20px;
+  height: 40px;
+}
+
+
+@media screen and (max-width:1000px) {
+  :root {
+    --auth-p-font-size: 25px;
+    --auth-form-width: 50%;
+    --auth-intro-width: 40%;
+    --auth-h-font-size: 60px;
+  }
+
+  .auth-form-intro {
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  :root {
+    --auth-h-font-size: 40px;
+    --auth-p-font-size: 22px;
+    --auth-form-width: 100%;
+    --auth-intro-width: 100%;
+  }
+
+  .auth-content {
+    margin-top: 100px;
+    min-height: 80vh;
+    width: 90%;
+  }
+
+  #Signin {
+    flex-direction: column;
+  }
+
+  #Signup {
+    flex-direction: column-reverse;
+  }
+
+  .auth-header {
+    font-size: var(--auth-h-font-size);
+    text-align: center;
+    width: 100%;
+  }
+
+  .auth-p {
+    font-size: var(--auth-p-font-size);
+    text-align: center;
+  }
+
+  .auth-form-intro {
+    font-size: 20px;
+    margin: 0px;
+  }
+
+
+
+  .form-result {
+    font-size: 18px;
+    height: 30px;
+  }
+
+}

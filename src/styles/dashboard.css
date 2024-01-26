@@ -1,0 +1,32 @@
+.dashboard-div {
+  margin-top: 80px;
+  height: 90vh;
+}
+
+/* index component */
+.index-container {
+  height: 90%;
+  overflow: scroll;
+  width: 95%;
+}
+
+.index-sub-container {
+  height: 95%;
+  margin: 40px 10px;
+}
+
+.light-sub-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark-sub-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(169, 169, 169, 0.133);
+}
+
+@media screen and (max-width: 1600px) {
+  .dashboard-div {
+    margin-top: 60px;
+  }
+}

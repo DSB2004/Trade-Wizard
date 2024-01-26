@@ -1,0 +1,165 @@
+.stock-home-div {
+  height: 95%;
+  width: 95%;
+}
+
+/* Trending  */
+
+.search-bar-div {
+  width: 600px;
+}
+
+.trending {
+  width: 35%;
+  margin: 10px;
+  height: 95%;
+}
+
+.trendingStockhead {
+  font-size: 25px;
+  text-align: center;
+  margin:10px;
+}
+
+.trending-scrollDiv {
+  height: 90%;
+  overflow: auto;
+}
+
+.trending-scrollDiv::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.trending-scrollDiv::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* stock Intro */
+
+.aboutThisStock {
+  height: 95%;
+  width: 65%;
+  margin: 0px 10px;
+}
+
+.stock-intro-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 5px;
+}
+
+.stock-intro-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.stock-intro-name {
+  transition: all 500ms ease-in-out;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0px;
+}
+
+.stock-intro-symbol {
+  transition: all 500ms ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.stock-intro-price {
+  transition: all 500ms ease-in-out;
+  font-size: 22px;
+  margin: 0px;
+}
+
+/* graph styling*/
+
+.graph-heading {
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.filterDiv {
+  width: 100%;
+  margin: auto;
+}
+
+.trend-graph-container {
+  height: 60%;
+  width: 95%;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutThisStock {
+    width: 50%;
+    margin: 5px;
+  }
+
+  .trending {
+    width: 50%;
+    margin: 5px;
+  }
+
+  .graph-heading {
+    font-size: 16px;
+  }
+
+  .filterDiv {
+    width: 100%;
+    margin: auto;
+  }
+
+  .stock-intro-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .stock-intro-name {
+    font-size: 20px;
+  }
+
+  .stock-intro-symbol {
+    font-size: 14px;
+  }
+
+  .stock-intro-price {
+    font-size: 20px;
+  }
+
+  .trendingStockhead {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stock-home-div {
+    display: block;
+    width: 100%;
+  }
+
+  .aboutThisStock,
+  .trending {
+    width: 95%;
+    margin: 5px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar-div {
+    width: 95%;
+  }
+
+  .trend-graph-container {
+    margin: 10px auto;
+    height: 65%;
+  }
+
+  .trendingStockhead {
+    font-size: 18px;
+  }
+}

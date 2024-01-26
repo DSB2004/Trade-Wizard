@@ -1,0 +1,35 @@
+@keyframes load89234 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.light-loader {
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    #f0f0f0 38%,
+    #f0f0f0 40%,
+    transparent 48%
+  );
+  animation: load89234 2s infinite;
+}
+.dark-loader {
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    #d0d0d034 38%,
+    #d0d0d034 40%,
+    transparent 48%
+  );
+  animation: load89234 2s infinite;
+}
+.diagonal-shine-effect {
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  height: 100%;
+  width: 100%;
+}

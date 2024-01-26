@@ -1,0 +1,13 @@
+.underline {
+  height: 5px;
+  border-radius: 20px;
+  background: var(--tri-bg)
+}
+
+
+@media screen and (max-width:800px) {
+  .underline {
+    display: none;
+  }
+
+}

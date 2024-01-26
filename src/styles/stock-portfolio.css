@@ -1,0 +1,174 @@
+.stock-page-div {
+  height: 100%;
+  width: 100%;
+}
+
+/* stock container */
+
+.stock-container {
+  width: 100%;
+  height: 55%;
+}
+
+.stock-intro-heading {
+  font-size: 25px;
+  color: var(--sub-heading-color);
+  width: 100%;
+  text-align: left;
+}
+
+/* Stock intro */
+.Stock-intro {
+
+  height: 100%;
+  width: 73%;
+  margin: 5px 2px;
+}
+
+.quote-data {
+  height: 90%;
+  width: 30%;
+  margin: 10px;
+}
+
+.volume-graph {
+  margin: 10px;
+  height: 90%;
+  width: 70%;
+}
+
+/* Company Profile */
+.Company-profile {
+  margin: 5px 2px;
+  height: 100%;
+  width: 24%;
+}
+
+.dashboard-stock-header {
+  width: 90%;
+  margin-bottom: 10px;
+  color: var(--sub-heading-color);
+}
+
+.dashboard-stock-header-text {
+  text-align: left;
+  font-size: 23px;
+  padding-left: 10px;
+}
+
+.dashboard-stock-ul {
+  width: 90%;
+}
+
+.dashboard-stock-logo {
+  width: 60px;
+  height: 60px;
+}
+
+/* Graph data */
+
+.graph-container {
+  width: 100%;
+  height: 40%;
+}
+
+@media screen and (max-width:1200px) {
+  .dashboard-stock-header-text {
+    font-size: 20px;
+    padding-left: 0px;
+  }
+
+  .stock-intro-heading {
+    font-size: 22px;
+  }
+
+
+  .dashboard-stock-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Stock-intro {
+    height: 100%;
+    width: 65%;
+    margin: 5px 2px;
+  }
+
+  .Company-profile {
+    margin: 5px 2px;
+    height: 100%;
+    width: 31%;
+  }
+
+
+}
+
+@media screen and (max-width:1000px) {
+
+  .stock-page-div {
+    display: block;
+  }
+
+  .stock-container {
+    display: block;
+    height: auto;
+  }
+
+  .Stock-intro,
+  .Company-profile {
+    width: 95%;
+    height: 100%;
+    margin: 5px auto;
+  }
+
+  .dashboard-stock-ul {
+    padding-left: 10px;
+    /* width: %; */
+  }
+
+  .graph-container {
+    display: block;
+    width: 95%;
+    margin: 5px auto;
+    height: auto;
+  }
+
+  .Company-profile {
+    padding: 10px 0px;
+  }
+
+  .stock-intro-heading {
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .Stock-intro {
+    display: block;
+
+  }
+
+  .stock-intro-heading {
+    font-size: 18px;
+    width: fit-content
+  }
+
+  .dashboard-stock-ul {
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .quote-data {
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .volume-graph {
+    margin: auto;
+    height: 50vh;
+    width: 95%;
+  }
+}

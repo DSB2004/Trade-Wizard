@@ -1,0 +1,37 @@
+.prev-graph-div {
+  margin: 5px 2px;
+  height: 100%;
+  width: 24%;
+}
+
+.prev-graph-header {
+  font-size: 20px;
+  margin: 5px 2px;
+  text-align: left;
+  width: 90%;
+  color: var(--sub-heading-color);
+}
+
+@media screen and (max-width:1200px) {
+  .prev-graph-header {
+    font-size: 18px;
+  }
+  .prev-graph-div {
+    margin: 5px 2px;
+    height: 100%;
+    width: 48%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .prev-graph-header {
+    font-size: 15px;
+  }
+  .prev-graph-div {
+    margin: 0px;
+    height: 300px;
+    width: auto;
+    padding: 0px 5px;
+
+  }
+}

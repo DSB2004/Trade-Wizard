@@ -1,0 +1,108 @@
+/* Main Styling  */
+:root {
+  --sub-heading-size: 35px;
+  --h-font-size-full: 70px;
+  --p-font-size-full: 35px;
+  --bolder-weight: bolder;
+}
+
+/* intro stylng */
+
+.intro {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+.intro-sub-head {
+  background: var(--head-tri-bg);
+  -webkit-background-clip: text;
+  /* For Safari and older versions of Chrome */
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--bolder-weight);
+  font-size: var(--sub-heading-size);
+}
+
+.intro-head {
+  font-size: var(--h-font-size-full);
+  text-align: center;
+}
+
+/* Home Content styling */
+.content {
+  min-height: 70vh;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.heading {
+  font-size: var(--h-font-size-full);
+  font-weight: var(--bolder-weight);
+  width: 100%;
+}
+
+.para {
+  font-weight: 500;
+  text-align: justify;
+  font-size: var(--p-font-size-full);
+}
+
+/* Footer styling */
+.footer {
+  background: var(--tri-bg);
+}
+
+
+@media screen and (max-width:1600px) {
+  :root {
+    --sub-heading-size: 25px;
+    --h-font-size-full: 60px;
+    --p-font-size-full: 30px;
+  }
+
+  .intro-sub-head {
+    margin: 10px auto;
+  }
+
+  .intro-head {
+    margin: 10px auto;
+  }
+
+
+}
+
+@media screen and (max-width:1000px) {
+  :root {
+    --sub-heading-size: 20px;
+    --h-font-size-full: 40px;
+    --p-font-size-full: 25px;
+  }
+
+  .footer-heading {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  :root {
+
+    --sub-heading-size: 20px;
+    --h-font-size-full: 35px;
+    --p-font-size-full: 18px;
+  }
+
+  .footer-heading {
+    font-size: 20px;
+  }
+
+  .intro-sub-head {
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .intro-head {
+    margin: 5px auto;
+  }
+}

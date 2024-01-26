@@ -1,0 +1,64 @@
+:root {
+  --error-page-head: 40px;
+  --error-page-para: 25px;
+  --error-page-list: 20px;
+}
+
+.errorpage-head {
+  font-size: var(--error-page-head);
+  text-align: center;
+}
+
+.errorpage-para {
+  color: black;
+  width: 60%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: var(--error-page-para);
+}
+
+.errorpage-list {
+  list-style: circle;
+  font-size: var(--error-page-list);
+}
+
+
+@media screen and (max-width:1000px) {
+  :root {
+    --error-page-head: 30px;
+    --error-page-para: 20px;
+    --error-page-list: 18px;
+  }
+
+  .errorpage-para {
+    width: 80%;
+  }
+
+
+}
+
+@media screen and (max-width:600px) {
+  :root {
+    --error-page-head: 25px;
+    --error-page-para: 18px;
+    --error-page-list: 15px;
+  }
+
+  .errorpage-para {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:300px) {
+  :root {
+    --error-page-head: 22px;
+    --error-page-para: 15px;
+    --error-page-list: 12px;
+  }
+
+  .errorpage-para {
+    width: 80%;
+  }
+
+}

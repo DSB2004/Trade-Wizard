@@ -1,0 +1,48 @@
+.slider-menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.open-menu {
+    left: 0;
+}
+
+.close-menu {
+    left: -100%;
+}
+
+.slider-menu-toggle-btn {
+    font-size: 30px;
+    margin-left: auto;
+}
+
+.slider-menu-heading {
+    font-size: 35px;
+}
+
+.slider-menu-ul {
+    padding-left: 30px
+}
+
+.slider-menu-list {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.slider-user-section {
+    margin-top: auto;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.slider-username {
+    font-size: 25px;
+}
+
+.slider-userid {
+    font-size: 15px;
+}

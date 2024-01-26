@@ -1,0 +1,38 @@
+/* header styling  */
+
+
+.slider-icon {
+    display: none;
+}
+
+@media screen and (max-width:1600px) {
+
+    .header-heading {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header-heading {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header-heading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-ul {
+        display: none;
+    }
+
+    .slider-icon {
+        display: block;
+        font-size: 28px;
+        ;
+    }
+
+}

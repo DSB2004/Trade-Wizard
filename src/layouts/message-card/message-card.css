@@ -1,0 +1,51 @@
+@keyframes self-msg-flyin {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes user-msg-flyin {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.self-msg {
+  animation: self-msg-flyin 300ms linear;
+}
+.user-msg {
+  animation: user-msg-flyin 300ms linear;
+}
+
+.message-card {
+  max-width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+.message-para {
+  margin: 2px 0px;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.message-id {
+  font-weight: bold;
+  margin-left: auto;
+  font-size: 12px;
+  width: fit-content;
+}
+#scroll-ref-div {
+  height: 20px;
+}
