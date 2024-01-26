@@ -1,70 +1,66 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Trade Wizard
 
-## Available Scripts
+Built on the JavaScript framework React, Trade Wizard offers a user-friendly interface with real-time stock data, daily market news, and historical information for each stock. Leveraging APIs for seamless data population, this application caters to both investors and enthusiasts, providing an intuitive platform to explore and analyze stocks effortlessly.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React JS, Redux, CSS, Rest API, Firebase, Chart JS
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## API Reference
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) Visit https://polygon.io and sign up to obtain your API key.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Place your API key in the .env file using the format: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` bash
+REACT_APP_POLYGON_KEY = YOUR_API_KEY.
 
-### `npm run eject`
+```
+2) Then visit https://finnhub.io/ and sign up to obtain your API key.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Place your API key in the .env file using the format: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` bash
+REACT_APP_FINNHUB_KEY = YOUR_API_KEY.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Steps to follow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+1) Create a new Firebase Project on https://firebase.google.com/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2) Enable Google and Email/Password option for User Authentication
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3) Enter the Configuration details in the ./app file of the firebase folder
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4) Run  this command to download all the dependencies
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
+5) After downloading all the dependencies ,run
+```bash
+npm start
+```
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1) Near real-time stock data: Stay up-to-date with the latest stock information for informed decision-making.
 
-### Making a Progressive Web App
+2) Historical data: Access historical stock data spanning the last six months to analyze trends and patterns.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3) News and blog updates: Receive regular news and blog updates related to the stock market, enhancing your understanding of market dynamics.
 
-### Advanced Configuration
+4) Web-based chat platform: Connect with other users in real-time through our web-based chat platform, fostering a collaborative community.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5) Graphical data representation: Visualize stock trends with graphical data representation, enabling users to grasp market movements and patterns at a glance.
 
-### Deployment
+6) User-friendly interface: Enjoy a seamless and intuitive interface, ensuring ease of navigation and a positive user experience throughout your stock exploration journey.
+## Summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Empower your stock exploration with our React-based project, featuring a robust client-side stack including React JS, Redux, CSS, Rest API integration, Firebase for seamless data management, and Chart JS for graphical data representation. Access near real-time stock data, stay informed with news and blogs, and connect with other users via our web-based chat platform. Explore user-friendly interfaces designed with React JS and experience the ease of accessing previous data. Elevate your stock analysis journey with our dynamic and comprehensive tech stack, tailored for both seasoned investors and enthusiasts.
