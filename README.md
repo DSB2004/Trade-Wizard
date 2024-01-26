@@ -48,6 +48,12 @@ npm install
 ```bash
 npm start
 ```
+
+## Demo
+**Explore the live demo by following this link**
+https://65b3b4d21ed4b510a9af06c1--startling-dragon-50d020.netlify.app/
+
+
 ## Features
 
 1) Near real-time stock data: Stay up-to-date with the latest stock information for informed decision-making.
