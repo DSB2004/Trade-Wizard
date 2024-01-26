@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore";
 const key = process.env.REACT_APP_FIREBASE_KEY;
 
 const firebaseConfig = {
-  apiKey:key,
+  apiKey: key,
   authDomain: "tradewizard-393610.firebaseapp.com",
   projectId: "tradewizard-393610",
   storageBucket: "tradewizard-393610.appspot.com",
@@ -35,4 +35,3 @@ Auth.onAuthStateChanged((user) => {
   }
 });
 
-//   apiKey: "AIzaSyAIveGU6wLVOZNSNYRRFK3s9daJeKJBtPo",

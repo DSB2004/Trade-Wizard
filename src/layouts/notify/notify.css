@@ -1,0 +1,62 @@
+.notify {
+    z-index: 3;
+    position: fixed;
+    width: 40%;
+    min-width: 250px;
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+}
+
+.open-notify {
+    top: 20px;
+}
+
+.close-notify {
+    top: -100%;
+}
+
+
+.notify-h2 {
+    font-size: 25px;
+    margin: 0px 5px;
+}
+
+.notify-h4 {
+    font-size: 15px;
+    margin: 0px 5px;
+    font-weight: 500;
+}
+
+.notify-loader {
+    margin: 20px 0px;
+    height: 10px;
+    background: var(--tri-bg);
+}
+
+.to-load {
+    animation-delay: 500ms;
+    animation: loader-animation 4s linear forwards;
+}
+
+
+@keyframes loader-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .notify-h2 {
+        font-size: 22px;
+    }
+
+    .notify-h4 {
+        font-size: 12px;
+    }
+
+}

@@ -1,7 +1,8 @@
 import { Database } from "../app";
-import { collection, addDoc, onSnapshot, orderBy, query } from "firebase/firestore";
+import { collection, addDoc, onSnapshot } from "firebase/firestore";
 import { AddBlog } from "../../hook/redux-slice/Blog";
 import store from "../../hook/store";
+import { showNotification } from "../../util/common/notify-user";
 
 export const BlogsCollection = collection(Database, "blogs");
 export const writeBlog = async (content) => {
@@ -9,7 +10,7 @@ export const writeBlog = async (content) => {
     const res = await addDoc(BlogsCollection, content);
     return res;
   } catch (err) {
-    console.log(err);
+    showNotification("error")
   }
 };
 onSnapshot(BlogsCollection, (snapshot) => {

@@ -10,11 +10,12 @@ export default function AuthProvider({ func, icon, text }) {
           e.preventDefault();
           func();
         }}
-        className={`auth-provider trans-500 ${
-          darkTheme ? "dark-auth-provider" : "light-auth-provider"
-        }`}
+        className={`auth-provider trans-500 ${darkTheme ? "dark-auth-provider" : "light-auth-provider"
+          }`}
       >
-        <img src={icon} alt="" className="auth-provider-icon" />
+        <div className={`auth-provider-icon flex-center trans-500 ${darkTheme ? "dark-text" : "light-text"}`}>
+          {icon}
+        </div>
         SignIn with {text}
       </button>
     </>

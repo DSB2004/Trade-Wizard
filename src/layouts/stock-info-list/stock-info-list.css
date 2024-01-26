@@ -22,3 +22,26 @@
     font-size: 14px;
   }
 }
+
+
+@media screen and (max-width:1000px) {
+  .dashboard-stock-li {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .stock-li-value {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .dashboard-stock-li {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .stock-li-value {
+    font-size: 10px;
+  }
+}

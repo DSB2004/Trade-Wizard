@@ -14,7 +14,7 @@
   border-radius: 40px;
   transition: var(--trans);
   box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25),
-    0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
+      0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(0, 0, 0, 0.233);
   padding: 2px;
   overflow: hidden;
@@ -34,58 +34,29 @@
   z-index: 2;
 }
 
-.outerline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  content: "";
-  height: 130%;
-  width: 100%;
-  border-radius: 30px;
-  box-sizing: border-box;
-  z-index: 1;
-  /* opacity: ; */
-}
-
 @keyframes movetoright {
   0% {
-    transform: translateX(-30%);
-    background: radial-gradient(circle,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.783) 0%,
-        rgba(255, 255, 255, 0) 100%);
+      margin-left: 0px;
   }
 
   100% {
-    transform: translateX(30%);
-    background: radial-gradient(circle,
-        rgba(255, 255, 255, 0.479) 0%,
-        rgba(255, 255, 255, 0.08) 0%,
-        rgba(255, 255, 255, 0.133) 100%);
+      margin-left: 65px;
   }
 }
 
 @keyframes movetoleft {
   0% {
-    transform: translateX(30%);
-    background: radial-gradient(circle,
-        rgba(255, 255, 255, 0.479) 0%,
-        rgba(255, 255, 255, 0.08) 0%,
-        rgba(255, 255, 255, 0.133) 100%);
+      margin-left: 65px;
   }
 
   100% {
-    background: radial-gradient(circle,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.783) 0%,
-        rgba(255, 255, 255, 0) 100%);
-    transform: translateX(-30%);
+      margin-left: 0px;
   }
 }
 
 .spot {
   box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25),
-    0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
+      0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
   position: absolute;
   border-radius: 100%;
   transition: var(--trans);
@@ -196,6 +167,8 @@
 }
 
 .light-slider {
+
+  animation: movetoleft 500ms linear forwards;
   background-color: rgb(255, 197, 49);
 }
 
@@ -204,16 +177,10 @@
 }
 
 .dark-slider {
+  animation: movetoright 500ms linear forwards;
   background-color: rgb(197, 197, 197);
 }
 
-.light-outline {
-  animation: movetoleft 500ms linear forwards;
-}
-
-.dark-outline {
-  animation: movetoright 500ms linear forwards;
-}
 
 .light-slider:hover {
   transform: translateX(5px);
@@ -260,37 +227,160 @@
 @media screen and (max-width:1000px) {
 
   .theme-btn {
-    width: 90px;
-    height: 30px;
+      width: 90px;
+      height: 30px;
   }
 
   .slider {
-    height: 30px;
-    width: 30px;
+      height: 30px;
+      width: 30px;
+  }
+
+  @keyframes movetoright {
+      0% {
+          margin-left: 0px;
+      }
+
+      100% {
+          margin-left: 60px;
+      }
+  }
+
+  @keyframes movetoleft {
+      0% {
+          margin-left: 60px;
+      }
+
+      100% {
+          margin-left: 0px;
+      }
+  }
+
+  #spot-1 {
+      height: 6px;
+      width: 6px;
+      top: 20%;
+      left: 20%;
+  }
+
+  #spot-2 {
+      height: 6px;
+      width: 6px;
+      top: 40%;
+      left: 60%;
+  }
+
+  #spot-3 {
+      height: 6px;
+      width: 6px;
+      top: 60%;
+      left: 20%;
+  }
+
+  #cloud-1 {
+      font-size: 40px;
+      top: -5px;
+      left: 5px;
+  }
+
+  #cloud-2 {
+      color: rgb(231, 231, 231);
+      top: 0px;
+      left: 20px;
+      font-size: 40px;
   }
 }
 
 @media screen and (max-width:600px) {
 
   .theme-btn {
-    width: 80px;
-    height: 25px;
+      width: 80px;
+      height: 25px;
   }
 
   .slider {
-    height: 25px;
-    width: 25px;
+      height: 25px;
+      width: 25px;
   }
+
+  @keyframes movetoright {
+      0% {
+          margin-left: 0px;
+      }
+
+      100% {
+          margin-left: 55px;
+      }
+  }
+
+  @keyframes movetoleft {
+      0% {
+          margin-left: 55px;
+      }
+
+      100% {
+          margin-left: 0px;
+      }
+  }
+
+  .stars {
+      font-size: 3px;
+  }
+
+
 }
+
 @media screen and (max-width:300px) {
 
   .theme-btn {
-    width: 70px;
-    height: 20px;
+      width: 70px;
+      height: 20px;
   }
 
   .slider {
-    height: 20px;
-    width: 20px;
+      height: 20px;
+      width: 20px;
+  }
+
+
+  @keyframes movetoright {
+      0% {
+          margin-left: 0px;
+      }
+
+      100% {
+          margin-left: 50px;
+      }
+  }
+
+  @keyframes movetoleft {
+      0% {
+          margin-left: 50px;
+      }
+
+      100% {
+          margin-left: 0px;
+      }
+  }
+
+  #spot-1 {
+      height: 4px;
+      width: 4px;
+      top: 20%;
+      left: 20%;
+  }
+
+  #spot-2 {
+      height: 4px;
+      width: 4px;
+      top: 40%;
+      left: 60%;
+  }
+
+  #spot-3 {
+      height: 4px;
+      width: 4px;
+      top: 60%;
+      left: 20%;
   }
 }

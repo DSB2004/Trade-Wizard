@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
 
 } from "firebase/auth";
+import { showNotification } from "../../util/common/notify-user";
 
 
 import store from "../../hook/store";
@@ -18,7 +19,7 @@ export const SignOutFromTradeWizard = async () => {
     await signOut(Auth);
     store.dispatch(updateUser(null))
   } catch (err) {
-    console.log(err);
+    showNotification("error")
   }
 };
 
@@ -46,8 +47,6 @@ const errorType = (code) => {
 };
 
 export const SignUpWithTradeWizard = async (data) => {
-  // data  {email: "email of the user", password: "12345", displayName: "John Doe"}
-  // console.log(data)
   try {
     const userCredential = await createUserWithEmailAndPassword(
       Auth,
@@ -56,7 +55,7 @@ export const SignUpWithTradeWizard = async (data) => {
     );
     const user = userCredential.user;
     await updateProfile(user, {
-      displayName: data.displayName,
+      displayName: data.name,
     });
     sendEmailVerification(user);
     return { status: true, id: user.uid };
@@ -66,7 +65,6 @@ export const SignUpWithTradeWizard = async (data) => {
 };
 
 export const SignInWithTradeWizard = async (data) => {
-  console.log(data);
   try {
     const userCredential = await signInWithEmailAndPassword(
       Auth,

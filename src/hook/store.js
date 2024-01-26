@@ -6,6 +6,7 @@ import CurrentReducer from "./redux-slice/Current"
 import YearlyDataReducer from "./redux-slice/Yearly-Data"
 import NewsReducer from "./redux-slice/News"
 import BlogReducer from "./redux-slice/Blog";
+import NotifyReducer from "./redux-slice/Notify";
 const store = configureStore({
     reducer: {
         Theme: ThemeReducer,
@@ -14,7 +15,8 @@ const store = configureStore({
         Current: CurrentReducer,
         YearlyData: YearlyDataReducer,
         Blog: BlogReducer,
-        News: NewsReducer
+        News: NewsReducer,
+        Notify: NotifyReducer
 
     }
 })

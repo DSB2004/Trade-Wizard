@@ -3,6 +3,7 @@ import { addIntoTrending } from "../../hook/redux-slice/Trending";
 import store from "../../hook/store";
 import { handler } from "../api/stock-api";
 import { changeCurrent } from "../../hook/redux-slice/Current";
+import { showNotification } from "../common/notify-user";
 // update the trending hook in redux with symbols that are predefined in the project
 export async function updateTrending() {
   try {
@@ -14,6 +15,6 @@ export async function updateTrending() {
       }
     });
   } catch (err) {
-    console.log(err);
+    showNotification("request")
   }
 }

@@ -3,10 +3,12 @@ import { useSelector } from "react-redux";
 import TrendingStock from "../../layouts/trending-stock/trending-stock";
 import LoadingDiv from "../../layouts/loading-div/loading";
 import { updateTrending } from "../../util/data/trending";
+import { showNotification } from "../../util/common/notify-user";
 export default function Trending() {
   const darkTheme = useSelector((state) => state.Theme);
   const TrendingData = useSelector((state) => state.Trending);
   const [stockArray, updateArray] = useState([]);
+
   const AddToTrendingList = async (data) => {
     try {
       await new Promise((resolve) => {
@@ -29,7 +31,7 @@ export default function Trending() {
         }, 500);
       });
     } catch (error) {
-      console.error(error);
+      showNotification("error")
     }
   };
   useEffect(() => {
@@ -59,9 +61,8 @@ export default function Trending() {
       ) : (
         <>
           <h1
-            className={`trans-500 ${
-              darkTheme ? "dark-text" : "light-text"
-            } trendingStockhead`}
+            className={`trans-500 ${darkTheme ? "dark-text" : "light-text"
+              } trendingStockhead`}
           >
             Trending Stocks
           </h1>

@@ -6,7 +6,6 @@ const YearlyData = createSlice({
     initialState: [],
     reducers: {
         addToPrev: (state, action) => {
-            console.log("added to previous")
             return [...state, action.payload];
         },
 

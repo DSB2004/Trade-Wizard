@@ -3,6 +3,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Background from "./layouts/background/background";
 // Home import
+
+import Notify from "./layouts/notify/notify";
+
 import Home from "./pages/home";
 
 // auth import
@@ -24,8 +27,9 @@ import LoadingPage from "./layouts/loading-page/loading-page";
 import { useSelector } from "react-redux";
 export default function App() {
   const userinfo = useSelector((state) => state.User);
-  const [IsLoading, toggleLoading] = useState(false);
-  const [showLoader, toggleLoader] = useState(false);
+  const [IsLoading, toggleLoading] = useState(true);
+  const [showLoader, toggleLoader] = useState(true);
+
   const navigate = useNavigate();
 
   const loadingEvent = async (user) => {
@@ -44,38 +48,38 @@ export default function App() {
     }, 3000);
   };
 
-  // useEffect(() => {
-  //   if (IsLoading === true) {
-  //     setTimeout(() => {
-  //       toggleLoader(true);
-  //     }, 500);
-  //   } else {
-  //     if (IsLoading === false) {
-  //       setTimeout(() => {
-  //         toggleLoader(false);
-  //       }, 500);
-  //     }
-  //   }
-  // }, [IsLoading]);
+  useEffect(() => {
+    if (IsLoading === true) {
+      setTimeout(() => {
+        toggleLoader(true);
+      }, 500);
+    } else {
+      if (IsLoading === false) {
+        setTimeout(() => {
+          toggleLoader(false);
+        }, 500);
+      }
+    }
+  }, [IsLoading]);
 
-  // useEffect(() => {
-  //   loadingEvent(userinfo);
-  // }, [userinfo]);
+  useEffect(() => {
+    loadingEvent(userinfo);
+  }, [userinfo]);
   return (
     <>
       <Background />
       {showLoader ? (
         <>
           <div
-            className={`trans-500 relative ${
-              IsLoading ? "opacity-in" : "opacity-out"
-            }`}
+            className={`trans-500 relative ${IsLoading ? "opacity-in" : "opacity-out"
+              }`}
           >
             <LoadingPage />
           </div>
         </>
       ) : (
         <>
+          <Notify />
           <div
             className={`trans-500  ${IsLoading ? "opacity-out" : "opacity-in"}`}
           >

@@ -60,7 +60,7 @@ export default function TrendingStock({ data }) {
                 ? darkTheme
                   ? "up-dark-percentage"
                   : "up-light-percentage"
-                : "downPercentage"
+                : "down-percentage"
             }`}
           >
             {change}

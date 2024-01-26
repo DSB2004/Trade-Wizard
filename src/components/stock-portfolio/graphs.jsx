@@ -14,7 +14,6 @@ export default function Graphs({ data }) {
       setClose({ dataArray: data.c, labelArray: labelArray });
       setHigh({ dataArray: data.h, labelArray: labelArray });
       setLow({ dataArray: data.l, labelArray: labelArray });
-      console.log(data);
     }
   }, [data]);
   return (

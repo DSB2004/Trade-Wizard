@@ -17,6 +17,7 @@ export default function StockPortfolio() {
     setData(await StockData(stock));
   };
   useEffect(() => {
+    document.title = `${stock}`;
     fetchAction(stock);
   }, [stock]);
   useEffect(() => {

@@ -2,7 +2,11 @@ import store from "../../hook/store";
 import { addIntoTrending } from "../../hook/redux-slice/Trending";
 import { handler } from "../api/stock-api";
 import { changeIntro } from "./filter-data";
+import { showNotification } from "../common/notify-user";
+
 export async function searchStock(symbol) {
+
+
   if (typeof symbol === "string" && /^[a-zA-Z]+$/.test(symbol)) {
     symbol = symbol.toUpperCase();
     try {
@@ -13,13 +17,18 @@ export async function searchStock(symbol) {
         return stock;
       } else {
         const response = await handler(symbol);
+
         if (response) {
           store.dispatch(addIntoTrending(response));
         }
         return response;
       }
     } catch (err) {
-      console.error(err);
+      showNotification("request")
     }
   }
+  else{
+    showNotification("wrong")
+  }
 }
+

@@ -1,6 +1,6 @@
 import React from "react";
-import LineGraph from "../../layouts/graph/graph";
-import LoadingDiv from "../../layouts/loading-div/loading";
+import LineGraph from "../graph/graph";
+import LoadingDiv from "../loading-div/loading";
 import "./header-graph.css";
 import { useSelector } from "react-redux";
 export default function HeaderGraph({ text ,data }) {

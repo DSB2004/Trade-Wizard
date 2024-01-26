@@ -28,7 +28,7 @@ export default function SliderMenu({ isOpen, changeFunc, NavList, user }) {
         updateContent([])
         if (NavList) {
             NavList.forEach(item => {
-                updateContent((prevState) => [...prevState, <SliderList toggle={changeFunc} text={item.text} func={item.func} />])
+                updateContent((prevState) => [...prevState, <SliderList toggle={changeFunc} text={item.text} func={item.func} key={item.text} />])
             })
         }
 

@@ -6,7 +6,6 @@ const Trending = createSlice({
   reducers: {
     addIntoTrending: (state, action) => {
       state.lastestAdded = action.payload;
-      console.log(state.dataArray.length);
       state.dataArray = [action.payload, ...state.dataArray];
     },
   },

@@ -12,6 +12,9 @@ export default function TradingDashboard() {
   const [searchVal, changeSearch] = useState("");
 
   useEffect(() => {
+    document.title = "Trading Dashboard";
+  }, [])
+  useEffect(() => {
     if (searchVal && searchVal !== "") searchStock(searchVal);
   }, [searchVal]);
 
@@ -29,16 +32,14 @@ export default function TradingDashboard() {
       </div>
       <div className="index-container flex-center stock-home-div ">
         <div
-          className={` ${
-            darkTheme ? "dark-sub-container" : "light-sub-container"
-          } index-sub-container trending trans-500 `}
+          className={` ${darkTheme ? "dark-sub-container" : "light-sub-container"
+            } index-sub-container trending trans-500 `}
         >
           <Trending />
         </div>
         <div
-          className={`  ${
-            darkTheme ? "dark-sub-container" : "light-sub-container"
-          } index-sub-container aboutThisStock trans-500`}
+          className={`  ${darkTheme ? "dark-sub-container" : "light-sub-container"
+            } index-sub-container aboutThisStock trans-500`}
         >
           <StockPortfolio />
         </div>

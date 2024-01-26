@@ -1,6 +1,7 @@
 import store from "../../hook/store";
 import { createNewsArray } from "../../hook/redux-slice/News";
 import { handler } from "../api/news-api";
+import { showNotification } from "../common/notify-user";
 // to get news info of market
 export async function getNewsData() {
   try {
@@ -11,5 +12,7 @@ export async function getNewsData() {
       store.dispatch(createNewsArray(data));
       return data;
     }
-  } catch (err) {}
+  } catch (err) {
+    showNotification("request")
+  }
 }

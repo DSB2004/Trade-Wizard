@@ -18,7 +18,7 @@
 .trendingStockhead {
   font-size: 25px;
   text-align: center;
-  margin:10px;
+  margin: 10px;
 }
 
 .trending-scrollDiv {
@@ -147,6 +147,24 @@
     width: 95%;
     margin: 5px auto;
   }
+
+  .stock-intro-name {
+    font-size: 18px;
+  }
+
+  .stock-intro-symbol {
+    font-size: 14px;
+  }
+
+  .stock-intro-price {
+    font-size: 20px;
+  }
+
+  .stock-intro-icon {
+    height: 45px;
+    width: 45px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -162,4 +180,41 @@
   .trendingStockhead {
     font-size: 18px;
   }
+
+  .stock-intro-name {
+    font-size: 14px;
+  }
+
+  .stock-intro-symbol {
+    font-size: 10px;
+  }
+
+  .stock-intro-price {
+    font-size: 14px;
+  }
+
+  .stock-intro-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+}
+
+@media screen and (max-width:350px) {
+  .stock-intro-name {
+    font-size: 12px;
+  }
+
+  .stock-intro-symbol {
+    font-size: 8px;
+  }
+
+  .stock-intro-price {
+    font-size: 12px;
+  }
+  .stock-intro-icon {
+    height: 30px;
+    width: 30px;
+  }
+
 }

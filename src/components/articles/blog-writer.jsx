@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { IoClose } from "react-icons/io5";
 import Coverbtn from "../../layouts/cover-btn/cover-btn";
 import { blogContent } from "../../asset/static/dashboard";
 import { FaInfoCircle, FaClipboard, FaExternalLinkAlt } from "react-icons/fa";
 import BlogWriterBar from "../../layouts/blog-writer-input/blog-writer-input";
-import { serverTimestamp } from "firebase/firestore";
 import { writeBlog } from "../../firebase/database/blog";
 export default function BlogWriter({ isClose, closeFunc }) {
   const darkTheme = useSelector((state) => state.Theme);
@@ -76,7 +75,7 @@ export default function BlogWriter({ isClose, closeFunc }) {
               func={() => {
                 console.log("Change");
                 closeFunc();
-                writeBlog({ header, summary, link, timestamp: serverTimestamp() });
+                writeBlog({ header, summary, link });
               }}
             />
           </form>

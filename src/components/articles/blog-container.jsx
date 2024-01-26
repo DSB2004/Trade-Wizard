@@ -2,21 +2,27 @@ import React, { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import NavButton from "../../layouts/nav-button/nav-button";
 import BlogCard from "../../layouts/blog-card/blog-card";
+import { showNotification } from "../../util/common/notify-user";
 export default function BlogContainer({ openFunc }) {
   const [blogArray, changeBlogArray] = useState([]);
   const darkTheme = useSelector((state) => state.Theme);
   const blogs = useSelector((state) => state.Blog);
   const blogCounter = useRef(0);
   const UpdateContent = async (blog) => {
-    await new Promise((resolve, reject) => {
-      setTimeout(() => {
-        changeBlogArray((prevState) => [
-          ...prevState,
-          <BlogCard data={blog} key={blog.id} />,
-        ]);
-        resolve();
-      }, 100);
-    });
+    try {
+
+      await new Promise((resolve, reject) => {
+        setTimeout(() => {
+          changeBlogArray((prevState) => [
+            ...prevState,
+            <BlogCard data={blog} key={blog.id} />,
+          ]);
+          resolve();
+        }, 100);
+      });
+    } catch (err) {
+      showNotification("error")
+    }
   };
   useEffect(() => {
     if (blogs !== null && blogCounter.current === 0) {

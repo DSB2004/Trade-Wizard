@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { signin } from "../../asset/static/auth";
-import GoogleIcon from "../../asset/image/google-icon.png";
+import { FaGoogle } from "react-icons/fa";
 import FormBtn from "../../layouts/form-btn/form-btn";
 import AuthProvider from "../../layouts/auth-provider/auth-provider";
 import { useSelector } from "react-redux";
@@ -27,7 +27,6 @@ export default function SignIn() {
         navigate(`/${response.status}/${response.id}`);
       }
     } catch (err) {
-      console.log(err);
       setResponse(err.message);
     }
   };
@@ -39,17 +38,15 @@ export default function SignIn() {
       >
         <div className="flex-left flex-column auth-intro">
           <h1
-            className={`auth-header margin-0 trans-500 ${
-              darkTheme ? "dark-text dark-shadow" : "light-text light-shadow"
-            }`}
+            className={`auth-header margin-0 trans-500 ${darkTheme ? "dark-text dark-shadow" : "light-text light-shadow"
+              }`}
           >
             {signin.head}
           </h1>
           <Underline style={{ width: "90%", margin: "0px 0px 10px 0px" }} />
           <p
-            className={`auth-p trans-500 ${
-              darkTheme ? "  dark-text dark-shadow" : "light-text light-shadow"
-            }`}
+            className={`auth-p trans-500 ${darkTheme ? "  dark-text dark-shadow" : "light-text light-shadow"
+              }`}
           >
             {signin.content}
           </p>
@@ -61,9 +58,8 @@ export default function SignIn() {
           }}
         >
           <h2
-            className={`trans-500 margin-5 auth-form-intro ${
-              darkTheme ? "  dark-text dark-shadow" : "light-text light-shadow"
-            } `}
+            className={`trans-500 margin-5 auth-form-intro ${darkTheme ? "  dark-text dark-shadow" : "light-text light-shadow"
+              } `}
           >
             SignIn With Trade Wizard
           </h2>
@@ -86,14 +82,13 @@ export default function SignIn() {
           />
           <FormBtn text="Sign In" func={signinUser} />
           <p
-            className={`form-result flex-center margin-10 trans-500 ${
-              darkTheme ? "dark-text" : "light-text"
-            }`}
+            className={`form-result flex-center margin-10 trans-500 ${darkTheme ? "dark-text" : "light-text"
+              }`}
           >
             {response}
           </p>
           <AuthProvider
-            icon={GoogleIcon}
+            icon={<FaGoogle />}
             func={SignInWithGoogle}
             text="Google"
           />
