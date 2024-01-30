@@ -51,7 +51,7 @@ npm start
 
 ## Demo
 **Explore the live demo by following this link**
-https://65b3b4d21ed4b510a9af06c1--startling-dragon-50d020.netlify.app/
+[https://65b3b4d21ed4b510a9af06c1--startling-dragon-50d020.netlify.app/](https://65b9142d5cf9e00094255a6d--hilarious-sherbet-02fdd8.netlify.app/)
 
 
 ## Features
