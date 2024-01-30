@@ -7,7 +7,7 @@ export default function HomeContent({ head, content, id }) {
     <div id={id} className={`flex-left  content  flex-column `}>
       <h1
         className={`heading margin-0 trans-500  flex-left flex-column ${
-          darkTheme ? "dark-text dark-shadow" : "light-text text-shadow "
+          darkTheme ? "dark-text dark-shadow" : "light-text light-shadow "
         }`}
       >
         {head}

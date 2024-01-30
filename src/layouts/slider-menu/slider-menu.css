@@ -25,12 +25,13 @@
 }
 
 .slider-menu-ul {
-    padding-left: 30px
+    padding-left: 20px
 }
 
 .slider-menu-list {
     font-size: 22px;
     font-weight: bold;
+    margin: 25px 0px;
 }
 
 .slider-user-section {

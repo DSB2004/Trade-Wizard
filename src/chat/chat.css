@@ -101,9 +101,22 @@
   }
 
   .chat-area {
-    width: 80%;
-    min-width: 250px
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
   }
+
+  .open-chat-area {
+    right: 0px;
+  }
+
+  .close-chat-area {
+    right: 100%;
+  }
+
 
   .chat-header {
     font-size: 12px;

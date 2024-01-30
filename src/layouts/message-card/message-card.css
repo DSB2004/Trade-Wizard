@@ -36,14 +36,14 @@
   margin: 2px 0px;
   width: 100%;
   overflow-wrap: break-word;
-  font-size: 15px;
+  font-size: 12px;
   text-align: justify;
 }
 
 .message-id {
   font-weight: bold;
   margin-left: auto;
-  font-size: 12px;
+  font-size: 9px;
   width: fit-content;
 }
 #scroll-ref-div {

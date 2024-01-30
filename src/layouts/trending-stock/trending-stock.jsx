@@ -34,34 +34,32 @@ export default function TrendingStock({ data }) {
       `}
       >
         <img src={logo} alt="" className="stock-icon" />
-        <div className="flex-left flex-column margin-10">
+        <div className="flex-left flex-column auto-right">
           <h3
             className={`stock-name ${darkTheme ? "dark-text" : "light-text"}`}
           >
             {name}
           </h3>
           <h4
-            className={`stock-symbol ${
-              darkTheme ? "dark-symbol" : "light-symbol"
-            }`}
+            className={`stock-symbol ${darkTheme ? "dark-symbol" : "light-symbol"
+              }`}
           >
             {symbol}
           </h4>
         </div>
-        <div className="flex-left flex-column auto-left">
+        <div className="flex-left flex-column">
           <h4
             className={`stock-price ${darkTheme ? "dark-text" : "light-text"}`}
           >
             {price}
           </h4>
           <h4
-            className={`trans-500 stockpercentage ${
-              typeof change === "string" && Number(change.replace("%", "")) > 0
+            className={`trans-500 stockpercentage ${typeof change === "string" && Number(change.replace("%", "")) > 0
                 ? darkTheme
                   ? "up-dark-percentage"
                   : "up-light-percentage"
                 : "down-percentage"
-            }`}
+              }`}
           >
             {change}
           </h4>

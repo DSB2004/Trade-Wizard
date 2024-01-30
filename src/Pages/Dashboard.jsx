@@ -11,7 +11,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const { auth, id } = useParams();
   useEffect(() => {
-    if (id != userinfo.uid) {
+    if (id !== userinfo.uid) {
       navigate("/");
     }
     if (userinfo.emailVerified !== true) {

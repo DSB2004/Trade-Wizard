@@ -14,7 +14,7 @@
 
 .blinker {
   height: 80%;
-  width: 5px;
+  width: 2px;
   animation: blink 500ms linear infinite;
 }
 
@@ -44,7 +44,6 @@
 
   .blinker {
     height: 60%;
-    width: 5px;
   }
 
 }
@@ -61,7 +60,6 @@
 
   .blinker {
     height: 60%;
-    width: 5px;
   }
 
 }
@@ -73,12 +71,11 @@
   }
 
   .typewriter-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .blinker {
     height: 80%;
-    width: 5px;
   }
 
 }

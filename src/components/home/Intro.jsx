@@ -27,14 +27,11 @@ export default function Intro() {
           </h1>
           <Typewriter content={marketLines} />
           <div className="flex-center intro-btn-div">
-            <a href="/" target="_blank">
+            <a href="https://github.com/DSB2004/Trade-Wizard" target="_blank">
               <NavButton text="Read Docs" />
             </a>
             <Link to="/auth/signup">
               <NavButton text="Get Started" />
-            </Link>
-            <Link to="/1234/true">
-              <NavButton text="Try Now" />
             </Link>
           </div>
         </div>
